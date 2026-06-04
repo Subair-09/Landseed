@@ -1,0 +1,195 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React from "react";
+import { Sparkles, Instagram, Facebook, ArrowUp, Send, ShieldCheck, Mail, Phone, ExternalLink, Globe } from "lucide-react";
+import { ESTATES_DATA } from "../data";
+
+interface FooterProps {
+  onScrollToTop: () => void;
+  onScrollToEstates: () => void;
+  onScrollToSection: (sectionId: string) => void;
+  onOpenBooking: () => void;
+}
+
+export default function Footer({ onScrollToTop, onScrollToEstates, onScrollToSection, onOpenBooking }: FooterProps) {
+  const currentYear = new Date().getFullYear();
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    alert("Subscribed! You will now receive LandSeeds newsletter updates directly.");
+  };
+
+  return (
+    <footer className="bg-black text-white relative border-t border-white/10" id="footer-section">
+      {/* Decorative vertical bounds flare */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-72 h-1 bg-gradient-to-r from-transparent via-red-650 to-transparent pointer-events-none" />
+
+      {/* Main Footer Links Block */}
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          
+          {/* Column 1: Brand Pitch & Newsletter */}
+          <div className="lg:col-span-4 space-y-6">
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://i.imgur.com/GoyFPK6.png" 
+                alt="LandSeeds Logo" 
+                referrerPolicy="no-referrer"
+                className="h-9 w-9 object-contain rounded-lg"
+              />
+              <div>
+                <span className="text-base font-extrabold font-display tracking-tight text-white block">
+                  LandSeeds
+                </span>
+                <span className="text-[10px] text-neutral-400 font-mono block uppercase">
+                  Integrated Services Ltd
+                </span>
+              </div>
+            </div>
+
+            <p className="text-xs text-neutral-400 leading-relaxed font-light">
+              "Affordable Lands, Secure Investments, Endless Possibilities." We acquire, map, survey, and process authentic real estate investments to fuel generational wealth with 100% legal integrity.
+            </p>
+
+            {/* Newsletter form */}
+            <form onSubmit={handleNewsletterSubmit} className="space-y-2 max-w-sm pt-2">
+              <label className="block text-[10px] text-neutral-400 font-mono uppercase tracking-wider">
+                Subscribe to Land Newsletters
+              </label>
+              <div className="relative">
+                <input
+                  type="email"
+                  required
+                  placeholder="yourname@gmail.com"
+                  className="w-full rounded-lg border border-white/10 bg-neutral-900 px-3.5 py-2 pr-10 text-xs text-white placeholder-neutral-500 focus:border-red-650 focus:outline-none focus:ring-1 focus:ring-red-650"
+                />
+                <button
+                  type="submit"
+                  className="absolute inset-y-1.5 right-1.5 px-2 bg-red-600 hover:bg-red-700 text-white rounded text-[10px] transition-colors"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Column 2: Navigation Links */}
+          <div className="lg:col-span-2 space-y-4">
+            <h5 className="text-xs font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2">
+              Corporate Desk
+            </h5>
+            <ul className="space-y-2 text-xs text-neutral-400 font-light">
+              <li>
+                <button onClick={() => onScrollToSection("hero-section")} className="hover:text-white transition-colors cursor-pointer text-left">
+                  Corporate Home
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onScrollToSection("about-section")} className="hover:text-white transition-colors cursor-pointer text-left">
+                  Our Mission
+                </button>
+              </li>
+              <li>
+                <button onClick={onScrollToEstates} className="hover:text-white transition-colors cursor-pointer text-left">
+                  Premium Estates
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onScrollToSection("benefits-section")} className="hover:text-white transition-colors cursor-pointer text-left">
+                  ROI Analytics
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onScrollToSection("testimonials-section")} className="hover:text-white transition-colors cursor-pointer text-left">
+                  Client Reviews
+                </button>
+              </li>
+              <li>
+                <button onClick={onOpenBooking} className="text-red-500 hover:text-red-450 transition-colors cursor-pointer font-semibold text-left">
+                  Book VIP Inspection
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Properties list overview */}
+          <div className="lg:col-span-3 space-y-4">
+            <h5 className="text-xs font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2">
+              Our Locations
+            </h5>
+            <ul className="space-y-2.5 text-xs text-neutral-400 font-light">
+              {ESTATES_DATA.map((est) => (
+                <li key={est.id} className="group flex items-center justify-between text-[11px]">
+                  <span className="group-hover:text-white transition-colors truncate block max-w-[170px]">
+                    {est.title.replace("The Seeds Estate – ", "")}
+                  </span>
+                  <span className="text-[9px] font-mono font-medium text-neutral-500 bg-neutral-900 px-1 py-0.5 rounded uppercase">
+                    ₦{(est.prices[250] / 1000).toFixed(0)}k+
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Support Contact info */}
+          <div className="lg:col-span-3 space-y-4">
+            <h5 className="text-xs font-bold text-white uppercase tracking-wider font-display border-b border-white/5 pb-2">
+              Contact Desk
+            </h5>
+            <div className="space-y-3 text-xs text-neutral-450 font-light">
+              <div className="flex gap-2">
+                <Mail className="w-4 h-4 text-red-500 flex-shrink-0" />
+                <span className="select-all">info@landseedsnigeria.com</span>
+              </div>
+              <div className="flex gap-2">
+                <Globe className="w-4 h-4 text-red-500 flex-shrink-0" />
+                <a href="https://landseedsnigeria.com" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline flex items-center gap-0.5 select-all">
+                  landseedsnigeria.com
+                  <ExternalLink className="w-3 h-3 text-neutral-600 inline" />
+                </a>
+              </div>
+              <div className="flex gap-2">
+                <Instagram className="w-4 h-4 text-red-500 flex-shrink-0" />
+                <a href="https://instagram.com/land_seeds" target="_blank" rel="noopener noreferrer" className="hover:text-white hover:underline text-red-400 font-semibold font-mono">
+                  @land_seeds
+                </a>
+              </div>
+              <div className="pt-2 border-t border-white/5 space-y-1 text-[11px] text-neutral-500">
+                <p>Support Hour Desk:</p>
+                <p>Monday - Friday: 8 AM - 6 PM</p>
+                <p>Saturday: 9 AM - 4 PM (Inspections)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* Extreme Bottom Level (Copyright info and back-to-top buttons) */}
+      <div className="bg-[#0b0b0b] border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+          
+          {/* Legal statement */}
+          <div className="text-xs text-neutral-500 font-light space-y-1">
+            <p>© {currentYear} LandSeeds Integrated Services Ltd. All Rights Reserved.</p>
+            <p className="text-[10px] text-neutral-600">
+              Disclaimer: Lands offered are fully surveyed. Final acquisition receipt and immediate physical land assignment is guaranteed upon successful clearing of purchase parameters.
+            </p>
+          </div>
+
+          {/* Back to top index shortcut */}
+          <button
+            onClick={onScrollToTop}
+            className="flex items-center gap-1.5 cursor-pointer rounded-xl bg-neutral-900 border border-white/5 px-4 py-2.5 text-xs text-neutral-400 hover:text-white hover:bg-neutral-850 hover:border-white/15 transition-all active:scale-95 shadow"
+            id="back-to-top-btn"
+          >
+            Back To Top <ArrowUp className="w-4 h-4 text-red-500" />
+          </button>
+        </div>
+      </div>
+    </footer>
+  );
+}
