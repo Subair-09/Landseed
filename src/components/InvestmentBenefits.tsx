@@ -12,7 +12,7 @@ import { COUNTERS_DATA, APPRECIATION_TIMELINE, ChartTimelineData } from "../data
 function CountUp({ value, suffix = "", prefix = "" }: { value: number; suffix?: string; prefix?: string }) {
   const [count, setCount] = useState(0);
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: true, margin: "-100px" });
+  const isInView = useInView(containerRef, { once: true, margin: "-10px" });
 
   useEffect(() => {
     if (isInView) {
