@@ -40,7 +40,7 @@ export default function Contact() {
 
   const triggerWhatsAppSupport = () => {
     const text = "Hello LandSeeds Team, I would like to get in touch regarding available estate plots in Lagos State - Epe. Please connect me with an investment counselor.";
-    window.open(`https://wa.me/2349000000000?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/2348108640108?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
   // Graphical vector representation layout coordinates for major Lagos State - Epe hubs
@@ -128,8 +128,9 @@ export default function Contact() {
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <h5 className="text-xs font-bold text-neutral-350 font-display uppercase tracking-wide">Hotline Chat</h5>
-                  <p className="text-[11px] text-neutral-500 mt-1">Available 24/7 for diaspora callers</p>
+                  <h5 className="text-xs font-bold text-neutral-355 font-display uppercase tracking-wide">Hotline Chat</h5>
+                  <p className="font-mono text-xs text-white mt-1">0810 864 0108</p>
+                  <p className="text-[10px] text-neutral-500 mt-0.5">Available 24/7 for support &amp; chat</p>
                   <button 
                     onClick={triggerWhatsAppSupport}
                     className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold mt-1 flex items-center gap-1 cursor-pointer"

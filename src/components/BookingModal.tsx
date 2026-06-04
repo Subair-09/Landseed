@@ -71,7 +71,7 @@ export default function BookingModal({ isOpen, onClose, selectedEstate, estatesL
 *Comments*: ${formData.message || "None"}`;
 
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/2349000000000?text=${encodedText}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/2348108640108?text=${encodedText}`, "_blank", "noopener,noreferrer");
   };
 
   return (

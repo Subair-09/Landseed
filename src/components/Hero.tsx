@@ -15,7 +15,7 @@ interface HeroProps {
 export default function Hero({ onOpenBooking, onScrollToEstates }: HeroProps) {
   const handleWhatsAppChat = () => {
     const text = "Hello LandSeeds Team, I am visiting your premium real estate platform and would like to inquire about genuine lands in Lagos State - Epe.";
-    window.open(`https://wa.me/2349000000000?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/2348108640108?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
   // SVGs for birds with custom paths representing wing flaps

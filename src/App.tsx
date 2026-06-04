@@ -45,7 +45,7 @@ export default function App() {
 
   const triggerDirectWhatsApp = () => {
     const text = "Hello LandSeeds Team, I am looking to invest in genuine layouts. Please hook me up with a sales partner.";
-    window.open(`https://wa.me/2349000000000?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
+    window.open(`https://wa.me/2348108640108?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
   return (
