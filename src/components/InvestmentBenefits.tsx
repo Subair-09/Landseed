@@ -124,7 +124,7 @@ export default function InvestmentBenefits() {
                     Value Growth Projection Chart
                   </h4>
                   <p className="text-[11px] text-neutral-400">
-                    Ogun State land valuation path indices (₦ Millions per 500sqm)
+                    Lagos State - Epe land valuation path indices (₦ Millions per 500sqm)
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 px-2 py-1 rounded bg-red-650/10 text-red-500 text-[10px] font-mono uppercase tracking-wider">
@@ -296,7 +296,7 @@ export default function InvestmentBenefits() {
                   </span>
                 ) : (
                   <span>
-                    By {hoveredData.year}, standard land values across strategic Ogun State hubs are projected to exceed <strong className="text-white">₦{hoveredData.averageValuePerSqm}M</strong> as urbanization matures. Entering today secures your position on the steep section of this appreciation climb.
+                    By {hoveredData.year}, standard land values across strategic Lagos State & Epe hubs are projected to exceed <strong className="text-white">₦{hoveredData.averageValuePerSqm}M</strong> as urbanization matures. Entering today secures your position on the steep section of this appreciation climb.
                   </span>
                 )}
               </div>

@@ -7,9 +7,9 @@ import { Estate, WhyChooseItem, CounterStat, Testimonial } from "./types";
 
 export const ESTATES_DATA: Estate[] = [
   {
-    id: "ifo-phase-1",
-    title: "The Seeds Estate – Ifo Phase 1",
-    location: "Abalabi Papa, Ifo, Ogun State",
+    id: "epe-phase-1",
+    title: "The Seeds Estate – Epe Phase 1",
+    location: "Mojoda, Epe, Lagos State",
     prices: {
       250: 500000,
       500: 800000
@@ -23,12 +23,12 @@ export const ESTATES_DATA: Estate[] = [
     documentation: "Deed of Assignment & Registered Survey",
     status: "Selling Fast",
     imageUrl: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200",
-    highlights: "Nestled in the robust commercial landscape of Ifo, Phase 1 offers immediate gateway positioning with incredible convenience and value."
+    highlights: "Nestled in the robust commercial landscape of Epe, Phase 1 offers immediate gateway positioning with incredible convenience and value."
   },
   {
-    id: "idi-iroko",
-    title: "The Seeds Estate – Idi Iroko",
-    location: "Ihumbo, Idiroko, Ogun State",
+    id: "ketu-epe",
+    title: "The Seeds Estate – Ketu Epe",
+    location: "Ketu-Epe, Epe, Lagos State",
     prices: {
       250: 500000,
       500: 800000
@@ -36,56 +36,56 @@ export const ESTATES_DATA: Estate[] = [
     features: [
       "Free from government acquisition",
       "Immediate physical allocation",
-      "Proximity to ECOWAS trade corridor",
+      "Proximity to Lekki-Epe expressway corridor",
       "Excellent commercial warehouse potential"
     ],
     documentation: "Registered Survey & Family Receipt",
     status: "Available",
     imageUrl: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200",
-    highlights: "Unlock international border trade advantages. Perfect for smart warehousing, agriculture, or merchant-resident hubs in Ihumbo."
+    highlights: "Unlock high-yield land appreciation advantages. Perfect for smart housing, agriculture, or merchant-resident hubs in Ketu, Epe."
   },
   {
-    id: "ibese",
-    title: "The Seeds Estate – Ibese",
-    location: "Ibese, Ogun State",
+    id: "itokin-epe",
+    title: "The Seeds Estate – Itokin Epe",
+    location: "Itokin, Epe, Lagos State",
     prices: {
       250: 500000,
       500: 800000
     },
     features: [
-      "Close to Dangote Cement Mega Plant",
+      "Close to major expressways and logistics hubs",
       "Gated community with standard layouts",
-      "Perfect for industrial staff housings",
+      "Perfect for residential and commercial development",
       "Electricity grid connection ongoing"
     ],
     documentation: "Approved Land Layout & C of O in Progress",
     status: "Available",
     imageUrl: "https://images.unsplash.com/photo-1524813686514-a57563d77965?q=80&w=1200",
-    highlights: "Positioned next to the industrial powerhouse of Ogun State. Invest where workers and subcontractors are constantly looking for housing."
+    highlights: "Positioned next to the industrial powerhouse and key expressways of Lagos. Invest where workers and subcontractors are constantly looking for housing."
   },
   {
-    id: "atan-ota",
-    title: "The Seeds Estate – Atan Ota",
-    location: "Alaba Idioro Off Sokoto Road, Atan, Ogun State",
+    id: "alaro-corridor",
+    title: "The Seeds Estate – Alaro Axis",
+    location: "Alaro City Area, Epe, Lagos State",
     prices: {
       250: 1300000,
       500: 2000000
     },
     features: [
       "Densely populated neighborhood",
-      "15 minutes drive to Ota industrial grid",
+      "15 minutes drive to Alaro City industrial grid",
       "Ready for instant residential construction",
       "Accessible during any wet or dry season"
     ],
     documentation: "Excision & Survey Map",
     status: "Limited Slots",
     imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200",
-    highlights: "Suburban living at its absolute finest. Located along the critical link between Lagos commercial suburbs and Ota's historic centers."
+    highlights: "Suburban living at its absolute finest. Located along the critical link between Lekki Free Trade Zone and Epe's historic centers."
   },
   {
-    id: "agbara",
-    title: "The Seeds Estate – Agbara",
-    location: "Modina Trailer Park, Agbara, Ogun State",
+    id: "epe-marina",
+    title: "The Seeds Estate – Epe Marina",
+    location: "Marina Road Axis, Epe, Lagos State",
     prices: {
       250: 2500000,
       500: 4000000
@@ -99,26 +99,26 @@ export const ESTATES_DATA: Estate[] = [
     documentation: "Registered Survey (Fully Verified)",
     status: "Selling Fast",
     imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200",
-    highlights: "Premium standard ecosystem located in the Agbara Industrial Corridor. The ultimate sanctuary for long-term high net-worth investors."
+    highlights: "Premium standard ecosystem located in the Epe Industrial Corridor. The ultimate sanctuary for long-term high net-worth investors."
   },
   {
-    id: "abeokuta",
-    title: "The Seeds Estate – Abeokuta",
-    location: "Alabata, Abeokuta, Ogun State",
+    id: "temu-epe",
+    title: "The Seeds Estate – Temu Epe",
+    location: "Temu, Epe, Lagos State",
     prices: {
       250: 650000,
       500: 1000000
     },
     features: [
-      "Direct proximity to Federal University (FUNAAB)",
+      "Direct proximity to Augustine University Epe",
       "High Student Hostel development potential",
       "Beautiful scenic environment",
-      "Ogun State Capital growth corridor"
+      "Lagos State - Epe growth corridor"
     ],
     documentation: "Government Registered Survey",
     status: "Available",
     imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200",
-    highlights: "Capitalize on high educational rental demand. Tap into the rapid outward growth of Nigeria's historic and high-yield capital city."
+    highlights: "Capitalize on high educational rental demand. Tap into the rapid outward growth of Lagos State's fastest growing hub."
   }
 ];
 
@@ -167,7 +167,7 @@ export const COUNTERS_DATA: CounterStat[] = [
     title: "Multiple Locations",
     value: 6,
     suffix: "+",
-    description: "Estates across major Ogun State development nodes"
+    description: "Estates across major Lagos State - Epe development nodes"
   },
   {
     id: "properties",
@@ -204,8 +204,8 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "testimonial-2",
     name: "Mrs. Funmilayo Sowemimo",
-    role: "Merchant & Agbara Business Owner",
-    quote: "I bought two plots in Agbara for hostel projects. The appreciate value has already grown beyond my initial projections. LandSeeds made my land acquisition process seamless and stress-free. Their honesty gave me absolute confidence.",
+    role: "Merchant & Epe Business Owner",
+    quote: "I bought two plots in Epe for hostel projects. The appreciate value has already grown beyond my initial projections. LandSeeds made my land acquisition process seamless and stress-free. Their honesty gave me absolute confidence.",
     avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=150",
     rating: 5
   },
@@ -213,7 +213,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     id: "testimonial-3",
     name: "Engr. Paul Nwosu",
     role: "Real Estate Arbitrage Consultant",
-    quote: "LandSeeds has built a rare brand of trust in the Nigerian real estate space. Their selection of locations near Ibese and Atan Ota are brilliant. No land grabbers (Omo-onile) issues, no hidden parameters. Just genuine development.",
+    quote: "LandSeeds has built a rare brand of trust in the Nigerian real estate space. Their selection of locations near Ketu Epe and Alaro Axis are brilliant. No land grabbers (Omo-onile) issues, no hidden parameters. Just genuine development.",
     avatarUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150",
     rating: 5
   }

@@ -51,7 +51,7 @@ export default function About({ onOpenBooking }: AboutProps) {
             </h2>
 
             <p className="text-neutral-400 leading-relaxed text-sm sm:text-base font-light">
-              <strong>LandSeeds Integrated Services Ltd</strong> is a premier property development and investment enterprise legally incorporated under corporate laws. We are explicitly devoted to facilitating legal, transparent, and seamless acquisition of genuine, appreciation-intensive land plots in Ogun State's fastest growing residential and heavy industrial corridors.
+              <strong>LandSeeds Integrated Services Ltd</strong> is a premier property development and investment enterprise legally incorporated under corporate laws. We are explicitly devoted to facilitating legal, transparent, and seamless acquisition of genuine, appreciation-intensive land plots in Lagos State & Epe's fastest growing residential and major industrial corridors.
             </p>
 
             <p className="text-neutral-450 leading-relaxed text-sm font-light">

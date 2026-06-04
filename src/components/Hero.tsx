@@ -14,7 +14,7 @@ interface HeroProps {
 
 export default function Hero({ onOpenBooking, onScrollToEstates }: HeroProps) {
   const handleWhatsAppChat = () => {
-    const text = "Hello LandSeeds Team, I am visiting your premium real estate platform and would like to inquire about genuine lands in Ogun State.";
+    const text = "Hello LandSeeds Team, I am visiting your premium real estate platform and would like to inquire about genuine lands in Lagos State - Epe.";
     window.open(`https://wa.me/2349000000000?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
@@ -159,7 +159,7 @@ export default function Hero({ onOpenBooking, onScrollToEstates }: HeroProps) {
             Own Genuine Land in <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-red-450">
               Fast-Growing Locations
-            </span> <br className="hidden sm:inline" /> Across Ogun State
+            </span> <br className="hidden sm:inline" /> Across Lagos State - Epe
           </motion.h1>
 
           <motion.p 

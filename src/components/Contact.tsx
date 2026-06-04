@@ -22,7 +22,7 @@ export default function Contact() {
 
   const [isSent, setIsSent] = useState(false);
   const [sending, setSending] = useState(false);
-  const [activeMapEstate, setActiveMapEstate] = useState<Estate>(ESTATES_DATA[4]); // default to Agbara
+  const [activeMapEstate, setActiveMapEstate] = useState<Estate>(ESTATES_DATA[4]); // default to Epe Marina
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,18 +39,18 @@ export default function Contact() {
   };
 
   const triggerWhatsAppSupport = () => {
-    const text = "Hello LandSeeds Team, I would like to get in touch regarding available estate plots in Ogun State. Please connect me with an investment counselor.";
+    const text = "Hello LandSeeds Team, I would like to get in touch regarding available estate plots in Lagos State - Epe. Please connect me with an investment counselor.";
     window.open(`https://wa.me/2349000000000?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
   };
 
-  // Graphical vector representation layout coordinates for major Ogun State hubs
+  // Graphical vector representation layout coordinates for major Lagos State - Epe hubs
   const mapCoordinatesPinMap = [
-    { id: "ifo-phase-1", top: "42%", left: "48%", isPrimaryRegion: true },
-    { id: "idi-iroko", top: "75%", left: "12%", isPrimaryRegion: true },
-    { id: "ibese", top: "48%", left: "32%", isPrimaryRegion: false },
-    { id: "atan-ota", top: "68%", left: "45%", isPrimaryRegion: true },
-    { id: "agbara", top: "82%", left: "38%", isPrimaryRegion: true },
-    { id: "abeokuta", top: "25%", left: "62%", isPrimaryRegion: true }
+    { id: "epe-phase-1", top: "42%", left: "48%", isPrimaryRegion: true },
+    { id: "ketu-epe", top: "75%", left: "12%", isPrimaryRegion: true },
+    { id: "itokin-epe", top: "48%", left: "32%", isPrimaryRegion: false },
+    { id: "alaro-corridor", top: "68%", left: "45%", isPrimaryRegion: true },
+    { id: "epe-marina", top: "82%", left: "38%", isPrimaryRegion: true },
+    { id: "temu-epe", top: "25%", left: "62%", isPrimaryRegion: true }
   ];
 
   return (
@@ -93,7 +93,7 @@ export default function Contact() {
                 <div>
                   <h5 className="text-xs font-bold text-neutral-300 font-display uppercase tracking-wide">Corporate HQ</h5>
                   <p className="text-xs text-neutral-450 mt-1 select-all">
-                    LandSeeds Services Ltd,<br />Ogun State, Nigeria.
+                    2, Iperu Akesan, Iyana - Ipaja, Lagos.
                   </p>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function Contact() {
                 <div className="flex justify-between items-center mb-4">
                   <div>
                     <h4 className="text-base sm:text-lg font-bold font-display text-white">
-                      Ogun State Core Map Hub
+                      Lagos State - Epe Core Map Hub
                     </h4>
                     <p className="text-[11px] text-neutral-400">
                       Tap property markers below to view location specifics

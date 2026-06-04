@@ -107,7 +107,7 @@ export default function BookingModal({ isOpen, onClose, selectedEstate, estatesL
                   {isSubmitted ? "Investment Reservation Confirmed" : "Book Site Inspection"}
                 </h3>
                 <p className="text-xs text-neutral-400 mt-1">
-                  {isSubmitted ? "Your priority client slot is secured" : "Secure premium lands in Ogun State"}
+                  {isSubmitted ? "Your priority client slot is secured" : "Secure premium lands in Lagos State - Epe"}
                 </p>
               </div>
               <button
